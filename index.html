@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151515">
+  <meta name="description" content="Brasa Burger — hambúrguer artesanal, ingredientes selecionados e muito sabor. Peça pelo WhatsApp.">
+  <title>Brasa Burger | Feito na brasa. Feito pra você.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Brasa Burger início">
+      <span class="brand-mark">B<span>!</span></span>
+      <span class="brand-name">BRASA<span>BURGER</span></span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#sobre">Nossa brasa</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">☼</button>
+      <button class="cart-button" id="openCart"><span class="cart-icon">▱</span><span class="cart-label">Meu pedido</span><span class="cart-count" id="cartCount">0</span></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> BURGER ARTESANAL • DESDE 2020</div>
+        <h1>FEITO NA<br><em>BRASA.</em><br>FEITO PRA VOCÊ.</h1>
+        <p>O hambúrguer que transforma sua fome em felicidade. Ingredientes de verdade, pão macio e aquele sabor inconfundível da brasa.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#cardapio">Ver cardápio <span>↗</span></a><a class="text-link" href="#sobre">Conheça nossa história <span>→</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>🍔</span><span>🔥</span><span>⭐</span></div><div><strong>+2.500 pedidos</strong><small>de clientes apaixonados</small></div><div class="proof-rating">★★★★★ <small>4,9/5</small></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <div class="hero-tag tag-top">100% ARTESANAL</div>
+        <img class="hero-burger" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1100&q=90" alt="Hambúrguer artesanal suculento com queijo e salada">
+        <div class="hero-sticker"><span>O SABOR</span><strong>É DE<br>OUTRO<br>NÍVEL.</strong><b>✳</b></div>
+        <div class="hero-tag tag-bottom">NA BRASA, SEM PRESSA.</div>
+      </div>
+      <div class="hero-side-note">SABOR QUE MARCA <span>✳</span> SABOR QUE MARCA <span>✳</span></div>
+    </section>
+
+    <section class="benefits" aria-label="Nossos diferenciais">
+      <div><span class="benefit-icon">♨</span><span><strong>Na brasa de verdade</strong><small>Sabor defumado único</small></span></div>
+      <div><span class="benefit-icon">✦</span><span><strong>Ingredientes frescos</strong><small>Qualidade em cada mordida</small></span></div>
+      <div><span class="benefit-icon">⌁</span><span><strong>Entrega caprichada</strong><small>Do nosso fogo até você</small></span></div>
+      <div><span class="benefit-icon">♡</span><span><strong>Feito com paixão</strong><small>Você sente a diferença</small></span></div>
+    </section>
+
+    <section class="menu-section section-wrap" id="cardapio">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span></span> ESCOLHA O SEU FAVORITO</div><h2>O CARDÁPIO <em>DA CASA.</em></h2></div>
+        <p>Do clássico ao surpreendente.<br>Qual vai ser o seu hoje?</p>
+      </div>
+      <div class="menu-toolbar">
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="todos">Todos</button>
+          <button class="filter" data-category="burgers">Burgers</button>
+          <button class="filter" data-category="combos">Combos</button>
+          <button class="filter" data-category="acompanhamentos">Acompanhamentos</button>
+          <button class="filter" data-category="bebidas">Bebidas</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar no cardápio..." aria-label="Buscar no cardápio"></label>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="menu-footnote"><span>✳</span> Produzido na hora. Do jeitinho que tem que ser.</div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="promo-copy"><div class="eyebrow">SEU MOMENTO MERECE</div><h2>UM COMBO<br><em>DE RESPEITO.</em></h2><p>Seu burger favorito + batata crocante + bebida gelada. A combinação perfeita existe.</p><a class="btn btn-light" href="#cardapio" data-combo-link>Escolher meu combo <span>↗</span></a></div>
+      <div class="promo-image"><img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85" alt="" onerror="this.style.display='none'"><div class="promo-food">🍔 <span>+</span> 🍟 <span>+</span> 🥤</div><div class="promo-stamp">COMBO<br><b>BRABO</b><br>✳</div></div>
+    </section>
+
+    <section class="about-section section-wrap" id="sobre">
+      <div class="about-photo"><img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?auto=format&fit=crop&w=900&q=85" alt="Hambúrguer artesanal preparado com cuidado"><div class="about-photo-label">DESDE 2020 <span>✳</span> FEITO NA BRASA</div></div>
+      <div class="about-copy"><div class="eyebrow"><span></span> MAIS QUE UM HAMBÚRGUER</div><h2>RESPEITO AO<br><em>INGREDIENTE.</em><br>PAIXÃO PELO FOGO.</h2><p>Acreditamos que um burger incrível começa muito antes da primeira mordida. Selecionamos cada ingrediente, preparamos tudo com cuidado e deixamos a brasa fazer sua mágica.</p><p>Sem atalhos. Sem ingredientes sem graça. Só comida de verdade, feita para dar vontade de repetir.</p><a class="text-link" href="#contato">Vem conhecer a gente <span>→</span></a></div>
+    </section>
+
+    <section class="contact-strip" id="contato"><div><div class="eyebrow">BATEU A FOME?</div><h2>CHAMA A GENTE. <em>VAI DE BRASA.</em></h2></div><a class="btn btn-primary" id="contactWhatsapp" href="#" target="_blank" rel="noopener">Pedir pelo WhatsApp <span>↗</span></a></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">B<span>!</span></span><span class="brand-name">BRASA<span>BURGER</span></span></a><p>Feito na brasa. Feito pra você.</p><div class="footer-bottom"><span>© <span id="year"></span> Brasa Burger. Todos os direitos reservados.</span><span>Feito com <b>♥</b> e muito fogo.</span></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Meu pedido" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">SUA FOME TEM SOLUÇÃO</span><h3>Meu pedido <span id="drawerCount">(0)</span></h3></div><button class="icon-btn" id="closeCart" aria-label="Fechar carrinho">✕</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>🍔</span><h4>Seu carrinho está vazio</h4><p>Escolha seu burger favorito e vem ser feliz.</p><button class="btn btn-primary" id="browseMenu">Ver cardápio</button></div></div>
+    <div class="cart-footer" id="cartFooter" hidden><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div><p class="cart-note">Entrega e pagamento combinados pelo WhatsApp.</p><button class="btn btn-primary checkout-btn" id="checkoutBtn">Finalizar pelo WhatsApp <span>↗</span></button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
